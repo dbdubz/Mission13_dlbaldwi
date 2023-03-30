@@ -14,7 +14,7 @@ class Movie extends React.Component<{
   render() {
     const movie = this.props;
     return (
-      <React.Fragment>
+      <>
         <tr>
           <td>{movie.Category}</td>
           <td>{movie.Year}</td>
@@ -23,7 +23,7 @@ class Movie extends React.Component<{
           <td>{movie.Rating}</td>
           <td>{movie.Edited}</td>
         </tr>
-      </React.Fragment>
+      </>
     );
   }
 }
@@ -31,8 +31,8 @@ class Movie extends React.Component<{
 class MovieTable extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <table>
+      <>
+        <table className="table table-bordered text-center">
           <thead>
             <tr>
               <th>Category</th>
@@ -49,18 +49,20 @@ class MovieTable extends React.Component {
             ))}
           </tbody>
         </table>
-      </React.Fragment>
+      </>
     );
   }
 }
 
-export default function Podcasts() {
+function Podcasts() {
   return (
     <div>
       <center>
-        <h1>My Movie Collection</h1>
+        <h1>Movie Collection</h1>
         <MovieTable />
       </center>
     </div>
   );
 }
+
+export default Podcasts;

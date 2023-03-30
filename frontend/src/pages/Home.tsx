@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import image from '../JoelHiltonHeadshot.jpg';
 
-export default function Home() {
+function Home() {
   return (
-    <React.Fragment>
+    <>
       <center>
         <img src={image} alt="Joel Hilton"></img>
         <p>
@@ -15,6 +15,8 @@ export default function Home() {
           You can also check out his podcast <Link to="/podcasts">here</Link>
         </p>
       </center>
-    </React.Fragment>
+    </>
   );
 }
+
+export default Home;

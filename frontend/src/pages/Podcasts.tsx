@@ -1,14 +1,16 @@
 import React from 'react';
 
-export default function Podcasts() {
+function Podcasts() {
   return (
-    <React.Fragment>
+    <>
       <center>
-        <h1>My Podcasts</h1>
+        <h1>Podcasts</h1>
         <a href="https://baconsale.com/" target={'_blank'} rel="noreferrer">
           Baconsale
         </a>
       </center>
-    </React.Fragment>
+    </>
   );
 }
+
+export default Podcasts;
