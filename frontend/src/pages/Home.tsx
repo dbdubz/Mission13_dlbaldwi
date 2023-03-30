@@ -4,7 +4,7 @@ import image from '../JoelHiltonHeadshot.jpg';
 
 export default function Home() {
   return (
-    <div>
+    <React.Fragment>
       <center>
         <img src={image} alt="Joel Hilton"></img>
         <p>
@@ -15,6 +15,6 @@ export default function Home() {
           You can also check out his podcast <Link to="/podcasts">here</Link>
         </p>
       </center>
-    </div>
+    </React.Fragment>
   );
 }
