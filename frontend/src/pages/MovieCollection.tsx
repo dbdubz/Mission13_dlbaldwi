@@ -15,7 +15,7 @@ class Movie extends React.Component<{
     const movie = this.props;
     return (
       <>
-        <tr>
+        <tr className="bg-light">
           <td>{movie.Category}</td>
           <td>{movie.Year}</td>
           <td>{movie.Title}</td>
@@ -32,23 +32,25 @@ class MovieTable extends React.Component {
   render() {
     return (
       <>
-        <table className="table table-bordered text-center">
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Year</th>
-              <th>Title</th>
-              <th>Director</th>
-              <th>Rating</th>
-              <th>Edited</th>
-            </tr>
-          </thead>
-          <tbody>
-            {movies.map((movie) => (
-              <Movie {...movie} />
-            ))}
-          </tbody>
-        </table>
+        <div className="col-8">
+          <table className="table table-bordered text-center">
+            <thead className="bg-secondary text-light">
+              <tr>
+                <th>Category</th>
+                <th>Year</th>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Rating</th>
+                <th>Edited</th>
+              </tr>
+            </thead>
+            <tbody>
+              {movies.map((movie) => (
+                <Movie {...movie} />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </>
     );
   }
@@ -58,7 +60,9 @@ function Podcasts() {
   return (
     <div>
       <center>
+        <br></br>
         <h1>Movie Collection</h1>
+        <br></br>
         <MovieTable />
       </center>
     </div>

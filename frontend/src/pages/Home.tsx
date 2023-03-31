@@ -6,7 +6,12 @@ function Home() {
   return (
     <>
       <center>
+        <br></br>
+        <h1>Joel Hilton's Podcast and Movie Collection</h1>
+        <br></br>
         <img src={image} alt="Joel Hilton"></img>
+        <br></br>
+        <br></br>
         <p>
           This website highlights movies from{' '}
           <Link to="/movies">Joel Hilton's collection</Link>
