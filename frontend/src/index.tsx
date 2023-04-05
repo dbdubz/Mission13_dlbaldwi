@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Podcasts from './pages/Podcasts';
-import Movies from './pages/MovieCollection';
+import Movies from './movies/movies';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(
@@ -20,7 +20,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/podcasts" element={<Podcasts />} />
-          <Route path="/movies" element={<Movies />} />
+          <Route path="/api/movies" element={<Movies />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

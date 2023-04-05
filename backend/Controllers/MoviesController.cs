@@ -17,7 +17,7 @@ namespace backend.Controllers
 
         public IEnumerable<Movie> Get()
         {
-            return _db.Movies.ToArray();
+            return _db.Movies.Where(m => m.Edited != "" && m.Edited != null).OrderBy(m => m.Title).ToArray();
         }
     }
 }

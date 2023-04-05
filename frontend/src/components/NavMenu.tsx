@@ -12,7 +12,7 @@ function Nav() {
             <Link to="/podcasts" className="col navbar-brand text-white">
               Podcasts
             </Link>
-            <Link to="/movies" className="col navbar-brand text-white">
+            <Link to="/api/movies" className="col navbar-brand text-white">
               Movies
             </Link>
           </div>
